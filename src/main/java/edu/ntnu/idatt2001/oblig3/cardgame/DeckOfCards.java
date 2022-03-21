@@ -2,6 +2,7 @@ package edu.ntnu.idatt2001.oblig3.cardgame;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class DeckOfCards {
     private List<PlayingCard> deck;
@@ -14,6 +15,19 @@ public class DeckOfCards {
                 deck.add(new PlayingCard(i,j));
             }
         }
+    }
+
+    public List<PlayingCard> dealHand(int n){
+        List<PlayingCard> hand = new ArrayList<>();
+        Random rand = new Random();
+        for (int i = 0; i < n; i++) {
+            int randIndex = rand.nextInt(deck.size());
+
+            hand.add(deck.get(randIndex));
+
+            deck.remove(randIndex);
+        }
+        return hand;
     }
 
 
