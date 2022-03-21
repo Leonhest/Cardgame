@@ -30,5 +30,7 @@ public class DeckOfCards {
         return hand;
     }
 
-
+    public List<PlayingCard> getDeck() {
+        return deck;
+    }
 }
