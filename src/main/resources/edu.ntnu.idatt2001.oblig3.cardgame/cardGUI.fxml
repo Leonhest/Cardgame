@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.oblig3.cardgame.CardController">
+   <children>
+      <Button id="DealHandButton" fx:id="dealHandButton" layoutX="481.0" layoutY="85.0" mnemonicParsing="false" onAction="#dealHand" text="Deal hand" />
+      <Button id="CheckHandButton" fx:id="checkHandButton" onAction="#checkHand" layoutX="476.0" layoutY="146.0" mnemonicParsing="false" text="Check hand" />
+      <TextArea id="HeartCards" fx:id="heartCards" layoutX="329.0" layoutY="285.0" prefHeight="43.0" prefWidth="103.0" style="-fx-border-color: black;" />
+      <TextArea id="SpadesQueen" fx:id="spadesQueen" layoutX="329.0" layoutY="336.0" prefHeight="43.0" prefWidth="103.0" style="-fx-border-color: black;" />
+      <TextArea id="FacesSum" fx:id="facesSum" layoutX="94.0" layoutY="285.0" prefHeight="43.0" prefWidth="103.0" style="-fx-border-color: black;" />
+      <Text layoutX="14.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sum of faces" />
+      <Text layoutX="228.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards of hearts" />
+      <TextArea id="Flush" fx:id="flush" layoutX="94.0" layoutY="336.0" prefHeight="43.0" prefWidth="103.0" style="-fx-border-color: black;" />
+      <Text layoutX="14.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flush" />
+      <Text layoutX="228.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queen of spades" />
+      <TextArea id="handDisplay" fx:id="handDisplay" layoutX="14.0" layoutY="14.0" prefHeight="235.0" prefWidth="427.0" style="-fx-border-color: black;" />
+   </children>
+</AnchorPane>

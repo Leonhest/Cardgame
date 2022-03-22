@@ -1,3 +1,4 @@
+
 package edu.ntnu.idatt2001.oblig3.cardgame;
 
 import org.junit.jupiter.api.DisplayName;

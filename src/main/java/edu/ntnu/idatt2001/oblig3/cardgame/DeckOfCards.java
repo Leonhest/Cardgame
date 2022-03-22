@@ -1,3 +1,4 @@
+
 package edu.ntnu.idatt2001.oblig3.cardgame;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class DeckOfCards {
         deck = new ArrayList<>();
         for(char i: suit){
             for(int j = 1; j <14; j++){
-                deck.add(new PlayingCard(i,j));
+                deck.add(new PlayingCard((char)i,j));
             }
         }
     }
@@ -34,3 +35,4 @@ public class DeckOfCards {
         return deck;
     }
 }
+
